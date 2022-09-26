@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.auinger.training</groupId>
-    <artifactId>maven-basics</artifactId>
-    <version>2.0</version>
-    <packaging>pom</packaging>
+    <groupId>de.auinger.training.maven_basics</groupId>
+    <artifactId>040a-project-with-deps</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -16,7 +16,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
+            <version>3.11</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

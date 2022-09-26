@@ -45,8 +45,9 @@ Diese soll eine `main()` Methode enthalten.
 
 ### a) Projekt mit Abhängigkeiten
 
-1. Legen Sie ein Maven Projekt mit Abhängigkeiten auf `commons-lang3` und `junit-jupiter-api` (Junit5) an
-2. Stellen Sie die Abhängigkeiten mithilfe des "dependency" Plugins dar
+1. Legen Sie ein Maven Projekt mit Abhängigkeiten auf `org.apache.commons:commons-lang3:3.11`
+und `org.junit.jupiter:junit-jupiter-api:5.9.0` (Junit5) an
+2. Stellen Sie die Abhängigkeiten mithilfe des "dependency" Plugins dar (als Liste und als Baum)
 3. Erweitern Sie das Projekt um Abhängigkeiten auf `demo-lib-A` und `demo-lib-B`. Welche transitiven 
   Abhängigkeiten kommen dazu? In welcher Version? 
 4. Lassen Sie sich mögliche Upgrades anzeigen
