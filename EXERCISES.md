@@ -60,3 +60,14 @@ das Projekt aufgenommen wird
 
 1. Erstellen Sie einen einfachen Testfall und rufen Sie Maven so auf, dass der Test ausgeführt wird 
 2. Was wäre ein passender Scope für die JUnit5 Dependency? 
+
+
+## 050 - plugins
+
+1. Schauen Sie sich die Dokumentation des "Maven Compiler Plugins" an. Wie kann die JDK Version des Source-Codes
+gesetzt werden (Stichwort "-source argument")?
+2. Konfigurieren Sie in Ihrem Projekt den Source und Target Level direkt mittels des `<configuration>` 
+Blocks des Compiler-Plugins
+3. Fügen Sie eine weitere Konfiguration für den Source und Target Level hinzu, der nur für die Phase "test-compile" gilt
+4. Fügen Sie den 'com.soebes.maven.plugins:echo-maven-plugin:0.5.0' Plugin hinzu, sodass dieser in einer Phase
+Ihrer Wahl das Projektverzeichnis auf das Terminal schreibt
