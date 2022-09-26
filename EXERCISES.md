@@ -49,9 +49,12 @@ Diese soll eine `main()` Methode enthalten.
 und `org.junit.jupiter:junit-jupiter-api:5.9.0` (Junit5) an
 2. Stellen Sie die Abhängigkeiten mithilfe des "dependency" Plugins dar (als Liste und als Baum)
 3. Erweitern Sie das Projekt um Abhängigkeiten auf `demo-lib-A` und `demo-lib-B`. Welche transitiven 
-  Abhängigkeiten kommen dazu? In welcher Version? 
-4. Lassen Sie sich mögliche Upgrades anzeigen
-5. Ändern Sie die pom.xml so, dass die transitiven Abhängigkeiten von demo-lib-B nicht mit in das Projekt aufgenommen werden
+  Abhängigkeiten kommen dazu? In welcher Version? Und welche nicht?
+4. Entfernen Sie die `commons-lang3` Dependency aus ihrer POM -- was ändert sich nun bzgl. der transitiven Abhängigkeiten?
+5. Lassen Sie sich mögliche Upgrades anzeigen
+6. Führen Sie ein Upgrade der Dependencies aus
+6. Ändern Sie die `pom.xml`, sodass die transitive Abhängigkeit `commons-io` von demo-lib-A nicht mit in 
+das Projekt aufgenommen wird
 
 ### b) Testfall
 
