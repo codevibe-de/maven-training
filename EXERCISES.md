@@ -45,7 +45,7 @@ Diese soll eine `main()` Methode enthalten.
 
 ## 030 - properties
 
-### TODO encoding auf utf-8 festlegen
+Keine Übung
  
 
 ## 040 - dependencies
