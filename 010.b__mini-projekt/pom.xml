@@ -6,9 +6,19 @@
     <artifactId>maven-basics</artifactId>
     <version>1.0</version>
 
+    <name>${my-name}</name>
+    <description>blah</description>
+
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <spring.version>5.3.22</spring.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
