@@ -65,11 +65,11 @@ Keine Übung
 ### b) Testfall (optional)
 
 1. Erstellen Sie einen leeren Testfall und rufen Sie Maven so auf, dass der Test ausgeführt wird. Wird ein Test
-tatsächlich ausgeführt?
+   tatsächlich ausgeführt?
 2. Fügen Sie noch die Dependency "junit-jupiter-engine" analog der "junit-jupiter-api" Dependency hinzu. Wie können
-Sie in Ihrer POM eine Wiederholung der gleichen Versionsnummer vermeiden?
+   Sie in Ihrer POM eine Wiederholung der gleichen Versionsnummer vermeiden?
 3. Damit Maven JUnit 5 Tests ausführen kann, brauchen Sie noch den folgenden Block in Ihrer POM. Was da passiert,
-verstehen wir später...
+   verstehen wir später...
    ````xml
     <build>
         <plugins>
@@ -83,11 +83,11 @@ verstehen wir später...
     </build>
     ````
 4. Führt Maven den Test nun aus? Dies sollte so sein...
-5. Implementieren Sie in dem Test nun einen Aufruf an die Methode 
-`com.example.generators.RandomStringGenerator#generateRandomString`. Diese Klasse finden Sie in der Demo-Lib-A. Der
-Test soll sicherstellen, dass das Ergebnis die richtige Länge hat.
-6. Was wäre ein passender Scope für die JUnit5 Dependency? Welchen Scope kann oder sollte die Demo-Lib-A Dependency haben?
-
+5. Implementieren Sie in dem Test nun einen Aufruf an die Methode
+   `com.example.generators.RandomStringGenerator#generateRandomString`. Diese Klasse finden Sie in der Demo-Lib-A. Der
+   Test soll sicherstellen, dass das Ergebnis die richtige Länge hat.
+6. Was wäre ein passender Scope für die JUnit5 Dependency? Welchen Scope kann oder sollte die Demo-Lib-A Dependency
+   haben?
 
 ## 050 - Plugins
 
@@ -116,22 +116,20 @@ Test soll sicherstellen, dass das Ergebnis die richtige Länge hat.
     * Tipp: Der Wert "org.apache.maven.pugins" ist der Default für ein `<groupId>` Element (via XSD), daher kann
       dieser für Core Plugins entfallen
 5. Erzeugen Sie erneut mittels des "help" Plugins die effektive POM, diesmal als `effective-pom-neu.xml` Datei.
-   Vergleichen Sie beide Dateien z.B. mittels eines Diff-Tools 
-
+   Vergleichen Sie beide Dateien z.B. mittels eines Diff-Tools
 
 ## 060 - Archetypes
 
 1. Wechseln Sie in ein temporäres Verzeichnis, z.B. `C:\Temp`
 2. Lassen Sie sich dort ein neues Maven Projekt mithilfe des `archetype:generate` Kommandos erzeugen
 
-
 ## 070 - Multi-Module
 
 1. Beginnen Sie in einem leeren Arbeitsverzeichnis mit der Erstellung eines Multi-Module Projekts
 2. Hierzu benötigen Sie zuerst eine top-level POM mit Packaging "pom" und einem `<modules>` Block
 3. Legen Sie zwei Unterverzeichnisse für die Module an - jeweils mit einer eigenen `pom.xml`.
-Die GroupId sollte die gleiche wie in der top-level POM sein. Denken Sie an die Deklaration der
-Parent-POM.
+   Die GroupId sollte die gleiche wie in der top-level POM sein. Denken Sie an die Deklaration der
+   Parent-POM.
 4. Vergessen Sie nicht, die Module in der Parent-POM zu hinterlegen (`<module>` Elemente) mit Namen
-der angelegten Modul-Verzeichnisse
+   der angelegten Modul-Verzeichnisse
 5. Führen Sie den Build für alle oder für ein Modul aus
