@@ -125,7 +125,7 @@ Keine Übung
 
 ## 070 - Multi-Module
 
-1. Beginnen Sie in einem leeren Arbeitsverzeichnis mit der Erstellung eines Multi-Module Projekts
+1. Beginnen Sie in einem leeren Arbeitsverzeichnis mit der Erstellung eines Multi-Module-Projekts
 2. Hierzu benötigen Sie zuerst eine top-level POM mit Packaging "pom" und einem `<modules>` Block
 3. Legen Sie zwei Unterverzeichnisse für die Module an - jeweils mit einer eigenen `pom.xml`.
    Die GroupId sollte die gleiche wie in der top-level POM sein. Denken Sie an die Deklaration der
