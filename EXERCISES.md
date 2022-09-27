@@ -5,36 +5,43 @@
 ### a) Minimale pom.xml
 
 1. Erstellen Sie sich im Projekt ein Arbeitsverzeichnis mit Namen "exercise" (auf gleicher Ebene wie
-2. diese Datei).
-3. Erstellen Sie eine `pom.xml`, welche nur die minimal benötigten Inhalte enthält (Google ist Ihr Freund).
-4. Probieren Sie verschiedene Plugins oder Phasen auszuführen.
+diese Datei)
+2. Erstellen Sie eine `pom.xml`, welche nur die minimal benötigten Inhalte enthält (Google ist Ihr Freund)
+3. Probieren Sie aus, verschiedene Plugins oder Phasen auszuführen
 
 ### b) Mini Projekt
 
-1. Erstellen Sie die per Maven Konvention erwarteten Verzeichnisse für den Anwendungs-Quellcode
-und zusätzliche Ressourcen.
-2. Legen Sie im entsprechenden Verzeichnis eine Klasse an (ohne Package). 
+1. Erstellen Sie die per Maven Konvention erwarteten Verzeichnisse für den Quellcode und zusätzliche Ressourcen
+2. Legen Sie im entsprechenden Verzeichnis eine Java Klasse an (ohne Package). 
 Diese soll eine `main()` Methode enthalten.
 3. Legen Sie im entsprechenden Verzeichnis eine zusätzliche Ressource an, z.B. eine (leere) data.csv Datei.
 4. Lassen Sie Maven die Anwendung kompilieren.
     - Ggf. gibt es hier eine Fehlermeldung wie z.B. "Source option 5 is no longer supported. Use 6 or later." 
    -- hierfür können Sie online nach einer Lösung suchen und benutzen, Sie müssen diese noch nicht verstehen :)
-5. Schauen Sie sich den Output von Maven an.
-6. Was passiert zusätzlich, wenn Sie die Anwendung paketieren lassen?
+5. Schauen Sie sich den Output von Maven an (`target` Verzeichnis).
+6. Was passiert dort außerdem noch, wenn Sie die Anwendung paketieren lassen?
 
 ## 020 - pom.xml
 
-### a) Packaging
+### a) Packaging "jar"
 
 1. Legen Sie das Packaging in Ihrer POM als `jar` fest -- ändert sich etwas?
 2. Was passiert, wenn Sie `mvn install` aufrufen?
-3. Ändern Sie das Packaging zu `pom`, erhöhen Sie die Version in Ihrer POM und rufen Sie erneut `mvn install` auf
 
-### b) Demo-Libs
+### b) Packaging "pom"
+
+1. Ändern Sie das Packaging zu `pom` und erhöhen Sie die Version in Ihrer POM
+2. Rufen Sie erneut `mvn install` auf
+3. Schauen Sie in Ihrem lokalen Repository nach, welche Dateien dort installiert wurden
+   * Tipp: Im Home-Verzeichnis unter ".m2/repository"
+   * Tipp: Ihre "groupId" bestimmt den Ablageort
+
+### c) Demo-Libs
 
 1. Installieren Sie mithilfe von Maven in Ihr lokales Maven-Repository die Bibliotheken aus den Verzeichnissen 
-   - `/000.demo-lib-a`
-   - `/000.demo-lib-b`
+   - `/000__demo-lib-A`
+   - `/000__demo-lib-B`
+
 
 ## 030 - properties
 
