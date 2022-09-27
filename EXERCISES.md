@@ -89,7 +89,7 @@ Test soll sicherstellen, dass das Ergebnis die richtige Länge hat.
 6. Was wäre ein passender Scope für die JUnit5 Dependency? Welchen Scope kann oder sollte die Demo-Lib-A Dependency haben?
 
 
-## 050 - plugins
+## 050 - Plugins
 
 ### a) Der "exec" Plugin
 
@@ -117,3 +117,12 @@ Test soll sicherstellen, dass das Ergebnis die richtige Länge hat.
       dieser für Core Plugins entfallen
 5. Erzeugen Sie erneut mittels des "help" Plugins die effektive POM, diesmal als `effective-pom-neu.xml` Datei.
    Vergleichen Sie beide Dateien z.B. mittels eines Diff-Tools 
+
+
+## 060 - Archetypes
+
+1. Wechseln Sie in ein temporäres Verzeichnis, z.B. `C:\Temp`
+2. Lassen Sie sich dort ein neues Maven Projekt mithilfe des `archetype:generate` Kommandos erzeugen
+
+
+## 070 - 
