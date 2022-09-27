@@ -64,10 +64,29 @@ das Projekt aufgenommen wird
 
 ## 050 - plugins
 
-1. Schauen Sie sich die Dokumentation des "Maven Compiler Plugins" an. Wie kann die JDK Version des Source-Codes
-gesetzt werden (Stichwort "-source argument")?
-2. Konfigurieren Sie in Ihrem Projekt den Source und Target Level direkt mittels des `<configuration>` 
-Blocks des Compiler-Plugins
-3. Fügen Sie eine weitere Konfiguration für den Source und Target Level hinzu, der nur für die Phase "test-compile" gilt
-4. Fügen Sie den 'com.soebes.maven.plugins:echo-maven-plugin:0.5.0' Plugin hinzu, sodass dieser in einer Phase
-Ihrer Wahl das Projektverzeichnis auf das Terminal schreibt
+### a) Der "exec" Plugin
+
+1. Erstellen Sie eine Klasse mit einer `main()` Methode in Ihrem Projekt, die eine Ausgabe auf `System.out` macht
+2. Schauen Sie sich den "Exec Maven Plugin" an, insbesondere das "exec:java" Goal. Welche Parameter benötigt 
+dieses Goal zur Ausführung?
+   * https://www.mojohaus.org/exec-maven-plugin/java-mojo.html
+3. Führen Sie den Plugin per Kommandozeile aus, sodass Ihre Main-Klasse von Maven aus gestartet wird 
+   * Tipp: `mvn <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>`
+   * Tipp: Properties können von der Kommandozeile mit `mvn -DpropertyName=propertyWert` gesetzt werden
+4. Fügen Sie den Plugin nun im `<build><plugins>` Block Ihrer POM hinzu. Mittels Kommandozeile führen Sie jetzt 
+das Ziel "java" des Plugins aus: `mvn exec:java`. Wofür genau steht "exec" an dieser Stelle? Funktioniert es?
+5. Ergänzen Sie das Kommando um den notwendigen "mainClass" Parameter
+6. Hinterlegen Sie den "mainClass" Parameter im `<configuration>` Block des Plugins
+7. Binden Sie den Plugin an die "verify" Phase und führen Sie diese aus.
+
+### b) Core Plugin Versionen festlegen
+
+1. Legen Sie eine minimale neue pom.xml an
+2. Erzeugen Sie mittels des "help" Plugins die effektive POM als `effective-pom.xml` Datei
+3. Mit welcher Version wird z.B. der "maven-compiler-plugin" deklariert?
+4. Suchen Sie in einem Online Repository nach der neusten Version des Plugins und deklarieren Sie diese als 
+aktuelle Version in Ihrer POM.
+   * Tipp: Der Wert "org.apache.maven.pugins" ist der Default für ein `<groupId>` Element (via XSD), daher kann
+   dieser für Core Plugins entfallen
+5. Erzeugen Sie erneut mittels des "help" Plugins die effektive POM, diesmal als `effective-pom-neu.xml` Datei. 
+Vergleichen Sie beide Dateien z.B. mittels eines Diff-Tools 
