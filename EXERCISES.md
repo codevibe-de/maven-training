@@ -125,4 +125,13 @@ Test soll sicherstellen, dass das Ergebnis die richtige Länge hat.
 2. Lassen Sie sich dort ein neues Maven Projekt mithilfe des `archetype:generate` Kommandos erzeugen
 
 
-## 070 - 
+## 070 - Multi-Module
+
+1. Beginnen Sie in einem leeren Arbeitsverzeichnis mit der Erstellung eines Multi-Module Projekts
+2. Hierzu benötigen Sie zuerst eine top-level POM mit Packaging "pom" und einem `<modules>` Block
+3. Legen Sie zwei Unterverzeichnisse für die Module an - jeweils mit einer eigenen `pom.xml`.
+Die GroupId sollte die gleiche wie in der top-level POM sein. Denken Sie an die Deklaration der
+Parent-POM.
+4. Vergessen Sie nicht, die Module in der Parent-POM zu hinterlegen (`<module>` Elemente) mit Namen
+der angelegten Modul-Verzeichnisse
+5. Führen Sie den Build für alle oder für ein Modul aus

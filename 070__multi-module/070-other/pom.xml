@@ -5,19 +5,14 @@
 
     <parent>
         <groupId>de.auinger.training.maven-basics</groupId>
-        <artifactId>070a-parent</artifactId>
+        <artifactId>070-parent</artifactId>
         <version>1.0</version>
     </parent>
 
-    <artifactId>070a-child1</artifactId>
+    <groupId>de.auinger.training.maven-basics</groupId>
+    <artifactId>070-other</artifactId>
+    <version>1.0</version>
 
-    <name>070a-child2</name>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-        </dependency>
-    </dependencies>
+    <name>070-other</name>
 
 </project>
