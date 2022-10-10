@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.auinger.training.maven_basics</groupId>
-    <artifactId>050a-plugin-configuration</artifactId>
+    <artifactId>050a-exec-plugin</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
