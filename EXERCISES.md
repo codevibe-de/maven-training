@@ -50,6 +50,8 @@ Keine Übung
 
 ### a) Projekt mit Abhängigkeiten
 
+ACHTUNG -- für diese Übung muss vorher "020.c" bearbeitet worden sein (Installation der Demo-Libs)!
+
 1. Legen Sie ein Maven Projekt mit Abhängigkeiten auf `org.apache.commons:commons-lang3:3.11`
    und `org.junit.jupiter:junit-jupiter-api:5.9.0` (Junit5) an
 2. Stellen Sie die Abhängigkeiten mithilfe des "dependency" Plugins dar (als Liste und als Baum)
@@ -64,7 +66,8 @@ Keine Übung
 
 ### b) Testfall (optional)
 
-1. Erstellen Sie einen leeren Testfall und rufen Sie Maven so auf, dass der Test ausgeführt wird. Wird ein Test
+1. Erstellen Sie einen leeren Testfall in der Klasse `RandomStringGeneratorTest`
+   und rufen Sie Maven so auf, dass Tests von Maven angestoßen werden. Wird ein Test
    tatsächlich ausgeführt?
 2. Fügen Sie noch die Dependency "junit-jupiter-engine" analog der "junit-jupiter-api" Dependency hinzu. Wie können
    Sie in Ihrer POM eine Wiederholung der gleichen Versionsnummer vermeiden?
