@@ -87,7 +87,7 @@ anpassen):
 ````xml
 
 <parent>
-    <groupId>de.auinger</groupId>
+    <groupId>de.codevibe.maven-training</groupId>
     <artifactId>maven-training-parent-pom</artifactId>
     <version>1.0</version>
 </parent>
