@@ -1,4 +1,4 @@
-package de.auinger.training.maven_basics;
+package de.codevibe.maven_training;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -27,7 +27,7 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
-                            <mainClass>de.auinger.training.maven_basics.App</mainClass>
+                            <mainClass>de.codevibe.maven_training.App</mainClass>
                         </configuration>
                     </execution>
                 </executions>

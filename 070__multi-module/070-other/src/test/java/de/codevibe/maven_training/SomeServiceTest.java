@@ -1,4 +1,4 @@
-package de.auinger.training.maven_basics;
+package de.codevibe.maven_training;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -5,7 +5,7 @@
 
     <parent>
         <groupId>de.codevibe.maven-training</groupId>
-        <artifactId>070-parent</artifactId>
+        <artifactId>070-multi-module</artifactId>
         <version>1.0</version>
     </parent>
 

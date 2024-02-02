@@ -1,4 +1,4 @@
-package de.auinger.training.maven_basics;
+package de.codevibe.maven_training;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
