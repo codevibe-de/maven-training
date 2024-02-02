@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.codevibe.maven-training</groupId>
-    <artifactId>050b-core-plugin-versions</artifactId>
+    <artifactId>040a-project-with-deps</artifactId>
     <version>1.0</version>
 
     <packaging>jar</packaging>
@@ -11,16 +11,8 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
-            </plugin>
-        </plugins>
-    </build>
+    <!-- dependencies hier einfügen -->
 
 </project>
