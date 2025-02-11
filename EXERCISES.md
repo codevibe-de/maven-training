@@ -7,47 +7,6 @@ folgen dem Nummerierungsschema (z.B. "040.b__junit-test")
 
 ## 010 - Einführung
 
-### a) IDE Import
-
-Importieren Sie dieses Projekt in Ihre IDE.
-
-- Intellij IDEA:
-    * Menü: File > New > Project from Existing Sources...
-    * Verzeichnis "maven-training" selektieren >> OK
-    * New Window
-- Eclipse:
-    * Menü: File > Import
-    * "General / Existing Projects into Workspace" selektieren >> Next
-    * Verzeichnis **oberhalb** von "maven-training" selektieren
-    * "maven-training" Eintrag selektieren >> Finish
-
-### b) Minimale pom.xml
-
-1. Erstellen Sie sich im Projekt ein Arbeitsverzeichnis mit Namen "exercise" (auf gleicher Ebene wie
-   diese Datei)
-2. Erstellen Sie (mit einem einfachen Editor wie z.B. Notepad oder Sublime) eine `pom.xml`,
-   welche nur die minimal benötigten Inhalte enthält (Google ist Ihr Freund)
-3. Probieren Sie aus, verschiedene Plugins oder Phasen auszuführen
-
-**Hinweis:** Das soeben erstellte "exercise" Verzeichnis kann nun in Ihrer IDE als dediziertes Maven-Projekt
-eingelesen werden -- und als Maven-unterstütztes Projekt Ihnen weitere Dienste leisten:
-
-- Intellij IDEA:
-    * Menü: File > New > Module from Existing Sources...
-    * Verzeichnis "exercise" selektieren >> OK
-    * "Import project from external model" selektieren, "Maven" selektieren >> Create
-    * das Unterverzeichnis "exercise" wird nun anders dargestellt
-- Eclipse:
-    * Menü: File > Import
-    * "Maven / Existing Maven Projects" selektieren >> Next
-    * Verzeichnis "maven-training" selektieren
-    * Deselect All
-    * "/exercise/pom.xml" Eintrag selektieren >> Finish
-    * das Unterverzeichnis "exercise" wird nun anders dargestellt (im "Project Explorer") bzw. top-level eingebunden
-      (im "Package Explorer")
-
-### c) Mini Projekt
-
 1. Erstellen Sie im "exercise" Verzeichnis die per Maven Konvention erwarteten Unterverzeichnisse:
     - `/src/main/java`
     - `/src/main/resources`
@@ -71,7 +30,7 @@ eingelesen werden -- und als Maven-unterstütztes Projekt Ihnen weitere Dienste 
 
 ### b) Packaging "pom"
 
-1. Ändern Sie das Packaging zu `pom` und erhöhen Sie die Version in Ihrer POM
+1. Ändern Sie das Packaging zu `pom` **und** erhöhen Sie die Version in Ihrer POM
 2. Rufen Sie nun `mvn install` auf -- damit wird das Output-Artefakt in Ihr lokales Repository
    installiert
 3. Schauen Sie in Ihrem lokalen Repository nach, welche Dateien dort installiert wurden
@@ -82,6 +41,7 @@ eingelesen werden -- und als Maven-unterstütztes Projekt Ihnen weitere Dienste 
 
 Installieren Sie mithilfe von Maven (`mvn install`) in Ihr lokales Maven-Repository die Bibliotheken aus den
 Verzeichnissen
+
 - `/000__demo-lib-A`
 - `/000__demo-lib-B`
 
@@ -89,7 +49,7 @@ Sinn der Übung ist, dass diese Bibliotheken später zur Verwendung als Dependen
 
 ### d) Parent-POM
 
-Legen Sie ein Verzeichnis `/parent-pom-artifact` im Projekt (auf gleicher Ebene wie `/exercise`) an.
+Legen Sie ein neues Top-Level Verzeichnis `/parent-pom-artifact` im Projekt an.
 
 Dort wollen wir eine eigene Parent-POM definieren. Diese soll eine Parent-POM für Ihre POM
 im `/exercise` Projekt sein.
@@ -210,11 +170,9 @@ ist.
 2. Erzeugen Sie mittels des "help" Plugins die effektive POM als `effective-pom.xml` Datei
 3. Mit welcher Version wird z.B. der "maven-compiler-plugin" deklariert?
 4. Suchen Sie in einem Online Repository nach der neusten Version des Plugins und deklarieren Sie
-   diese als
-   aktuelle Version in Ihrer POM.
+   diese als aktuelle Version in Ihrer POM.
     * Tipp: Der Wert "org.apache.maven.plugins" ist als Plugin-Group automatisch gesetzt (kann in
-      settings.xml
-      geändert werden), somit kann dieser für Core Plugins entfallen
+      settings.xml geändert werden), somit kann dieser für Core Plugins entfallen
 5. Erzeugen Sie erneut mittels des "help" Plugins die effektive POM, diesmal
    als `effective-pom-neu.xml` Datei.
    Vergleichen Sie beide Dateien z.B. mittels eines Diff-Tools
