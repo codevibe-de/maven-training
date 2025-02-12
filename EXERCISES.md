@@ -49,7 +49,7 @@ Sinn der Übung ist, dass diese Bibliotheken später zur Verwendung als Dependen
 
 ### d) Parent-POM
 
-Legen Sie ein neues Top-Level Verzeichnis `/parent-pom-artifact` im Projekt an.
+Legen Sie ein neues top-level Maven-Modul `parent-pom-artifact` im Projekt an.
 
 Dort wollen wir eine eigene Parent-POM definieren. Diese soll eine Parent-POM für Ihre POM
 im `/exercise` Projekt sein.
