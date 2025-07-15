@@ -16,8 +16,8 @@
         <module>050b-core-plugin-versions</module>
         <module>050c-buildnumber</module>
         <module>055a-profile-order</module>
-        <module>080__nexus</module>
-        <module>080__wrapper</module>
+        <module>080-nexus</module>
+        <module>080-wrapper</module>
         <module>demo-lib-A</module>
         <module>demo-lib-B</module>
         <module>exercise</module>
