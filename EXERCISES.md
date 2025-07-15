@@ -42,17 +42,30 @@ folgen dem Nummerierungsschema (z.B. "040.b__junit-test")
 Installieren Sie mithilfe von Maven (`mvn install`) in Ihr lokales Maven-Repository die Bibliotheken aus den
 Verzeichnissen
 
-- `/000__demo-lib-A`
-- `/000__demo-lib-B`
+- `/demo-lib-A`
+- `/demo-lib-B`
 
-Sinn der Übung ist, dass diese Bibliotheken später zur Verwendung als Dependencies parat stehen.
+Der Sinn der Übung ist, dass diese Bibliotheken später als Dependencies bereitstehen.
 
 ### d) Parent-POM
 
 Legen Sie ein neues top-level Maven-Modul `parent-pom-artifact` im Projekt an.
 
-Dort wollen wir eine eigene Parent-POM definieren. Diese soll eine Parent-POM für Ihre POM
-im `/exercise` Projekt sein.
+Dies geht in **Eclipse** über:
+- Rechtsklick auf das "project" Projekt
+- "Maven" > "New Maven Module Project"
+- Kreuz setzen bei "Create a simple project (skip archetype selection)"
+- Modul Name: `parent-pom-artifact`
+- Next
+- Finish
+
+Oder in **IntelliJ** über:
+- Rechtsklick auf das "maven-training" Projekt
+- "New" > "Module..."
+- Name: `parent-pom-artifact`
+- Create
+
+Dort wollen wir eine eigene Parent-POM definieren. 
 
 In der Parent-POM können Sie z.B. die Java Version, das Encoding und ggf. sogar schon
 Versionsnummern von Plugins definieren.
