@@ -58,7 +58,7 @@ Keine Übung
 
 ACHTUNG -- für diese Übung muss vorher "020.c" bearbeitet worden sein (Installation der Demo-Libs)!
 
-Diese Übung können Sie im Verzeichnis `/040.a__projekt-mit-dependencies` durchführen, wo eine
+Diese Übung können Sie im Verzeichnis `/040a-project-with-deps` durchführen, wo eine
 leere `pom.xml` vorbereitet ist.
 
 1. Fügen Sie dem Maven Projekt Abhängigkeiten auf `org.apache.commons:commons-lang3:3.11`
@@ -75,7 +75,7 @@ leere `pom.xml` vorbereitet ist.
 
 ### b) Testfall (optional)
 
-Diese Übung können Sie im Verzeichnis `/040.b__junit-test` durchführen, wo bereits etwas vorbereitet
+Diese Übung können Sie im Verzeichnis `/040b-junit-test` durchführen, wo bereits etwas vorbereitet
 ist.
 
 1. Erstellen Sie einen leeren Testfall in der Klasse `RandomStringGeneratorTest`
@@ -119,9 +119,8 @@ Nutzen Sie dann die neue Parent-POM und speziell diese Bibliothek in einem Proje
 
 ### a) Der "exec" Plugin
 
-Diese Übung können Sie im Verzeichnis `/050.a__exec-plugin` durchführen, wo bereits etwas
-vorbereitet
-ist.
+Diese Übung können Sie im Verzeichnis `/050a-exec-plugin` durchführen, wo bereits etwas
+vorbereitet ist.
 
 1. Erstellen Sie eine Klasse mit einer `main()` Methode in Ihrem Projekt, die eine Ausgabe
    auf `System.out` macht
@@ -157,7 +156,7 @@ ist.
 Der "buildnumber-maven-plugin" (https://www.mojohaus.org/buildnumber-maven-plugin/)
 kann eine automatische Build-Nummer generieren. Diese wird als Property `${buildNumber}` hinterlegt.
 
-Für diese Übung arbeiten Sie in der Datei `050.c__buildnumber/pom.xml`.
+Für diese Übung arbeiten Sie in der Datei `050c-buildnumber/pom.xml`.
 
 Definieren Sie dort diesen Plugin in dem `<plugins>` Block (innerhalb von `<build>`), um
 ihn dem Build-Prozess bekannt zu machen und binden Sie den Plugin an die "initialize" Phase (Achtung,
@@ -204,7 +203,7 @@ mvn validate help:evaluate -Dexpression=buildNumber
 
 ### Wrapper
 
-Generieren Sie den Maven-Wrapper im Verzeichnis `/080.wrapper`:
+Generieren Sie den Maven-Wrapper im Verzeichnis `/080-wrapper`:
 
 ````shell
 mvn wrapper:wrapper
@@ -214,6 +213,14 @@ Schauen Sie sich den Inhalt der Skripte und des generierten `/.mvn` Verzeichniss
 
 Führen Sie einen (leeren) Build mittels Wrapper aus:
 
+Windows:
+
 ````shell
-mvn clean compile
+mvnw clean compile
+````
+
+Powershell / Shell:
+
+````shell
+./mvnw clean compile
 ````
