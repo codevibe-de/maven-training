@@ -47,44 +47,6 @@ Verzeichnissen
 
 Der Sinn der Übung ist, dass diese Bibliotheken später als Dependencies bereitstehen.
 
-### d) Parent-POM
-
-Legen Sie ein neues top-level Maven-Modul `parent-pom-artifact` im Projekt an.
-
-Dies geht in **Eclipse** über:
-- Rechtsklick auf das "project" Projekt
-- "Maven" > "New Maven Module Project"
-- Kreuz setzen bei "Create a simple project (skip archetype selection)"
-- Modul Name: `parent-pom-artifact`
-- Next
-- Finish
-
-Oder in **IntelliJ** über:
-- Rechtsklick auf das "maven-training" Projekt
-- "New" > "Module..."
-- Name: `parent-pom-artifact`
-- Create
-
-Dort wollen wir eine eigene Parent-POM definieren. 
-
-In der Parent-POM können Sie z.B. die Java Version, das Encoding und ggf. sogar schon
-Versionsnummern von Plugins definieren.
-
-Nun installieren Sie die Parent-POM mittels `mvn install` in Ihr lokales Repository.
-
-Ab jetzt kann dieser Parent in anderen Projekten genutzt werden (GAV-Koordinaten entsprechend
-anpassen):
-
-````xml
-
-<parent>
-    <groupId>de.codevibe.maven-training</groupId>
-    <artifactId>maven-training-parent-pom</artifactId>
-    <version>1.0</version>
-</parent>
-````
-
-Probieren Sie die Nutzung der Parent-POM in Ihrem `/exercise` Projekt aus.
 
 ## 030 - Properties
 
