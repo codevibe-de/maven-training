@@ -9,4 +9,18 @@
 
     <packaging>pom</packaging>
 
+    <modules>
+        <module>040a-project-with-deps</module>
+        <module>040b-junit-test</module>
+        <module>050a-exec-plugin</module>
+        <module>050b-core-plugin-versions</module>
+        <module>050c-buildnumber</module>
+        <module>055a-profile-order</module>
+        <module>080__nexus</module>
+        <module>080__wrapper</module>
+        <module>demo-lib-A</module>
+        <module>demo-lib-B</module>
+        <module>exercise</module>
+    </modules>
+
 </project>
